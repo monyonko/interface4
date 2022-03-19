@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css" integrity="sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="companyLogo ">
+                <img class="standards " src="../static/img/log.PNG" alt="">
+                <p>Engineering <br> Board Of <br> Kenya</p>
+            </div>
+            <div class="engStandards ">
+                <a class="standards " href="">Updated Engineering Standards</a>
+                <a class="standards " href="">Engineer's Pocket Manual</a>
+                <a class="standards " href="">Statement of ethical principles</a>
+                <a class="standards " href="">Contractual regulations</a>
+                
+            </div>
+        </div>
+        <hr>
+        <div class="nav-bar">
+            <ul class="floatLeft">
+                <li>Home</li>
+                <li>About</li>
+                <li>Accreditation</li>
+                <li>Registration</li>
+                <li>Resource Centre</li>
+                <li>News and Events</li>
+                <li>Training and Devpt</li>
+                <li>Tenders</li>
+                <li>Careers</li>
+                <li>Help</li>
+                <li>Id Application</li>
+            </ul>
+            <ul class="floatRight">
+                <li>
+                    <i class="fa fa-search"></i>
+                    <!-- <form class="example" action="action_page.php">
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                  </form> -->
+                </li>
+                <li>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </li>
+            </ul>
+
+        </div>
+        <div class="carousel">
+            <img class="slideshow" src="{{url_for('static', filename='img/0.jpg')}}" alt="">
+            <img class="slideshow" src="{{url_for('static', filename='img/1.jpg')}}" alt="">
+            <img class="slideshow" src="{{url_for('static', filename='img/2.jpg')}}" alt="">
+            <img class="slideshow" src="{{url_for('static', filename='img/3.jpg')}}" alt="">
+            <img class="slideshow" src="{{url_for('static', filename='img/4.jpg')}}" alt="">
+            <img class="slideshow" src="{{url_for('static', filename='img/5.jpg')}}" alt="">
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="nextImage(-1)">&#10094;</a>
+            <a class="next" onclick="nextImage(1)">&#10095;</a>
+
+        </div>
+        <!-- The dots/circles -->
+        <div class="indicator" style="text-align:center">
+            <span class="dot" onclick="currentImage(1)"></span>
+            <span class="dot" onclick="currentImage(2)"></span>
+            <span class="dot" onclick="currentImage(3)"></span>
+            <span class="dot" onclick="currentImage(4)"></span>
+            <span class="dot" onclick="currentImage(5)"></span>
+            <span class="dot" onclick="currentImage(6)"></span>
+        
+        </div>
+        <div class="floating-button">
+            <div class="float">
+                <a href="" class="item" ><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="item"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="item"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="item"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="item"><i class="fa-brands fa-youtube"></i></a>    
+            </div>
+
+        </div>
+        <div class="one">
+            <p><a href="">Latest <br> Highlight</a></p>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Membership</a></p>
+            <p><a href="">Advocacy</a></p>
+
+        </div>
+        <div class="two">
+            <p>ONGOING PROJECTS</p>
+            <p>DURATION</p>
+
+        </div>
+        <div class="three">
+            <div class="floatLeft">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem magni amet similique soluta quo id, commodi vero in, sapiente accusamus enim eos exercitationem corrupti quae omnis dolor dolorem temporibus? Beatae.
+                Eaque doloribus eius nulla est. Aliquam minima dicta deleniti cum totam nostrum id quis, quia pariatur inventore saepe soluta accusantium magni, nihil praesentium repellendus vero dignissimos aperiam labore quas tempora!
+                Aliquid debitis quod autem quasi facere similique, dolor veritatis, adipisci fugit possimus eveniet voluptates delectus eligendi doloribus voluptatem ducimus aut exercitationem explicabo tempore quam accusamus officia harum asperiores. Corporis, exercitationem!
+                Ullam at ex perferendis id eveniet accusamus nam ab eligendi autem! Accusantium reprehenderit et neque harum labore quidem debitis itaque optio corrupti, est a facere adipisci suscipit minima excepturi eligendi!</p>
+            </div>
+            <div class="floatRight">
+                <div class="top">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci vitae voluptas facilis quisquam quidem quis laboriosam atque libero nesciunt doloribus, aliquid magni debitis harum nam consectetur voluptatem officiis neque quasi.
+                    Incidunt at nihil ad illo eius cumque fugit iste error alias sint quam expedita, deleniti magnam hic minima adipisci blanditiis facere tenetur aspernatur, suscipit placeat vero quos! Cum, voluptas at?</p>
+                </div>
+                <div class="bottom">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus eum, optio beatae ut, nihil enim quasi facere laborum magni dolorum obcaecati recusandae. Nulla vero soluta error eveniet placeat facilis. Nesciunt.
+                    Minus ratione, adipisci consectetur numquam eos id delectus quos maiores asperiores sed illum distinctio fugiat fugit voluptates officiis nulla reiciendis voluptatibus ipsa ad sit placeat beatae. Animi similique labore quidem?</p>
+                </div>
+            </div>
+        </div>
+        <div class="four">
+            <div class="moja">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            </div>
+            <div class="mbili">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+            <div class="tatu">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+            <div class="nne">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+            <div class="tano">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+
+        </div>
+        <div class="four-b ">
+            <p>Movable carousel</p>
+        </div>
+        <div class="five">
+            <div class="left">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+            <div class="right">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem explicabo, aperiam nulla odio quibusdam officia quis nihil dicta repellat nobis possimus tenetur cum, sit earum velit aliquid ullam voluptatem!
+                Id quia, quibusdam molestiae itaque qui tenetur assumenda in repellat nisi consequuntur ipsam hic sunt illum facilis deleniti atque odio debitis, quam similique aut excepturi. Iste cum praesentium rem aliquid.</p>
+            
+            </div>
+        </div>
+        <div class="six">
+            <button>Whistle blower</button>
+            <button>Share feedback</button>
+            <button>Professional misconduct</button>
+        </div>
+        <div class="footer">
+            <p class="floatLeft">cc</p>
+            <p >
+                <form class="example floatRight" action="action_page.php">
+                    <p>Join our monthly mail list</p>
+                    <label for="">Email</label>
+                    <input type="text" placeholder="" name="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                  </form>
+            </p>
+
+        </div>
+
+    </div>
+</body>
+</html>

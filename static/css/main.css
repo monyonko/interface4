@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+.floatRight{
+    float:right;
+}
+.floatLeft{
+    float:left;
+}
+ul li{
+    list-style: none;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo{
+    height:20vh; 
+    display:flex; 
+    margin-top: 2vh;; 
+}
+.companyLogo {
+    flex:1;
+}
+.engStandards{
+    flex:2;
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.companyLogo img{
+    width: 10vw;
+    height:10vh;
+}
+.companyLogo p{
+    text-align: justify;
+    margin-left: 5vh;
+    
+}
+.engStandards .standards{
+    flex:1;
+    background: #d3d3d3;
+    text-transform: uppercase;
+    margin: 2vh;
+    padding: 2vh;
+    
+}
+.nav-bar{
+    height:5vh; 
+    width: inherit;
+}
+.nav-bar ul{
+    display: inline-flex; 
+    background-color: #fff;
+    font-size: 3vh;
+    justify-content: space-between;
+    text-transform: capitalize;
+    margin: 1vh;
+    font-weight: 700;
+}
+.nav-bar ul li{
+    list-style: none;
+    padding-right: 2vh;   
+}
+.carousel{
+    margin-top: 1vh;
+    max-width: inherit;
+    height: 60vh;
+    overflow: hidden;
+    justify-content:center;
+    background-color: #bebcbc;   
+}
+.carousel .slideshow{
+    display:none;
+}
+.carousel img{
+    width: 80vw;
+    height:58vh;
+    margin: 1vh auto 1vh auto;
+    
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border-radius: 3px 0 0 3px;
+  }
+  
+/* Position the "next button" to the right */
+.next {right: 60px;}
+.prev {left: 60px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: #f1f1f1;
+}
+.indicator{
+    position: absolute;
+    top:78vh;
+    left:40vw;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 2px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+background-color: black;
+}
+.float{
+    position:fixed;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    width:15vw;
+    height:15vw;
+    left:0;
+    top:40vh;
+}
+.float .item{
+    border-radius: 50%;
+    width:3vw;
+    height:3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.float a{
+    text-decoration: none;
+}
+.one{
+    height:35vh;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+}
+.one p{
+    flex:1;
+    padding:2vh;
+    margin: 2vh;
+    background-color: #bebcbc;
+}
+.two{
+    height: 20vh;
+    text-align: center;
+   padding: 3vh;
+    background-color: #bebcbc;
+    margin-bottom: 3vh;
+    
+}
+
+.three{
+    height: 50vh; 
+    display: flex;  
+}
+.three .floatLeft{
+    flex:1;
+    height:50vh;
+    margin-right: 3vh;
+    background: #bebcbc; 
+}
+.three .floatRight{
+    flex:1;
+}
+.three .floatRight .top, .three .floatRight .bottom{
+    height:24vh;
+    background-color: rgb(231, 230, 230);
+    margin: 1vh;
+}
+.three p{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 10px; 
+    background-color: transparent;
+}
+.four{
+    height:50vh;
+    display:flex;
+}
+.four > div{
+    flex:1;
+    margin: 1vh;
+    background-color: rgb(231, 230, 230);
+}
+.four-b{
+    height: 20vh;
+    background-color: rgb(231, 230, 230);;
+    padding: 1vh;
+}
+.five{
+    height: 30vh;
+    display: flex;
+}
+.five .left{
+    flex:1;
+    background-color: rgb(231, 230, 230);
+    margin-right: 2vh;  
+}
+.five .right{
+    flex:1; 
+    background-color: rgb(231, 230, 230)   
+}
+.six{
+    height:10vh;
+    display: flex;
+}
+.six button{
+    flex:1;
+    margin: 2vh;
+    background-color: #bbb;
+}
+.footer{
+    height:5vh;
+    background-color: #bbb;
+    padding: 1vh;
+}
+.footer .floatLeft{
+    position: relative;
+    float: left;
+}
+.footer .floatRight{
+    position: relative;
+    float: right;
+}
+
+
+
